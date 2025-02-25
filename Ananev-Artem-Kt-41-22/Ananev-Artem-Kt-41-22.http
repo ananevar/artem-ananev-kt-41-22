@@ -1,0 +1,6 @@
+@Ananev_Artem_Kt_41_22_HostAddress = http://localhost:5072
+
+GET {{Ananev_Artem_Kt_41_22_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
