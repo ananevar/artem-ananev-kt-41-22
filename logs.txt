@@ -1,0 +1,20 @@
+2025-02-25 17:27:21.1730 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-02-25 17:27:21.1835 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-02-25 17:27:21.1887 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2025-02-25 17:27:21.1887 Info Configuration initialized.
+2025-02-25 17:27:21.3405 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2025-02-25 17:33:06.4145 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-02-25 17:33:06.4252 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-02-25 17:33:06.4252 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2025-02-25 17:33:06.4405 Info Configuration initialized.
+2025-02-25 17:33:06.5327 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2025-02-25 17:33:56.1694 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-02-25 17:33:56.1812 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-02-25 17:33:56.1812 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2025-02-25 17:33:56.1976 Info Configuration initialized.
+2025-02-25 17:33:56.2735 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2025-02-25 17:35:03.9969 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2025-02-25 17:35:04.0087 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-02-25 17:35:04.0087 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2025-02-25 17:35:04.0240 Info Configuration initialized.
+2025-02-25 17:35:04.1132 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
