@@ -1,6 +1,7 @@
 using Ananev_Artem_Kt_41_22.DB;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Ananev_Artem_Kt_41_22.ServiceExtensions;
 using NLog;
 using NLog.Web;
 
@@ -21,6 +22,8 @@ try
 
     builder.Services.AddDbContext<TeacherDbContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+    builder.Services.AddServices();
 
     var app = builder.Build();
 
