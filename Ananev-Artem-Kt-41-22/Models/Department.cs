@@ -2,11 +2,11 @@
 {
     public class Department
     {
-        public int DepartmentId { get; set; }
-        public string Name { get; set; }
-        public int HeadTeacherId { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public int? HeadId { get; set; } // Ссылается на преподавателя
+        public Teacher? Head { get; set; } // Навигационное свойство
+        public ICollection<Teacher> Teachers { get; set; } = new List<Teacher>();
 
-        public virtual Teacher HeadTeacher { get; set; }
-        public virtual ICollection<Teacher> Teachers { get; set; } = new List<Teacher>();
     }
 }

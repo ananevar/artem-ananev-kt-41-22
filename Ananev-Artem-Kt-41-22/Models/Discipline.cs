@@ -2,9 +2,9 @@
 {
     public class Discipline
     {
-        public int DisciplineId { get; set; }
-        public string Name { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public ICollection<Load> Loads { get; set; } = new List<Load>();
 
-        public List<Workload> Workloads { get; set; } = new List<Workload>();
     }
 }
