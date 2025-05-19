@@ -1,8 +1,12 @@
 using Ananev_Artem_Kt_41_22.DB;
 using Microsoft.EntityFrameworkCore;
+using Ananev_Artem_Kt_41_22.Interfaces.TeachersInterfaces;
+using Ananev_Artem_Kt_41_22.ServiceExtensions;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using NLog;
 using NLog.Web;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +18,12 @@ try
     builder.Host.UseNLog();
     // Add services to the container.
 
-    builder.Services.AddControllers();
+    builder.Services.AddControllers()
+        .AddJsonOptions(options =>
+        {
+            options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+            options.JsonSerializerOptions.MaxDepth = 32; // ?????????? ???????????? ??????? ?? ?????????????
+        });
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
@@ -22,6 +31,8 @@ try
     builder.Services.AddDbContext<TeacherDbContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+    builder.Services.AddServices();
+    builder.Services.AddMvc();
     var app = builder.Build();
 
     // Configure the HTTP request pipeline.
