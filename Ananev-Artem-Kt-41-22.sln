@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ananev-Artem-Kt-41-22", "Ananev-Artem-Kt-41-22\Ananev-Artem-Kt-41-22.csproj", "{7BB590AA-BE58-4E7A-824D-AC18B9A67D97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ananev-Artem-Kt-41-22", "Ananev-Artem-Kt-41-22\Ananev-Artem-Kt-41-22.csproj", "{7BB590AA-BE58-4E7A-824D-AC18B9A67D97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ananev_Artem_Kt-41-22.Tests", "Ananev_Artem_Kt-41-22.Tests\Ananev_Artem_Kt-41-22.Tests.csproj", "{745B5CB0-44CB-4E7B-9AE8-B1D2B598D551}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7BB590AA-BE58-4E7A-824D-AC18B9A67D97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BB590AA-BE58-4E7A-824D-AC18B9A67D97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BB590AA-BE58-4E7A-824D-AC18B9A67D97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{745B5CB0-44CB-4E7B-9AE8-B1D2B598D551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{745B5CB0-44CB-4E7B-9AE8-B1D2B598D551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{745B5CB0-44CB-4E7B-9AE8-B1D2B598D551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{745B5CB0-44CB-4E7B-9AE8-B1D2B598D551}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
