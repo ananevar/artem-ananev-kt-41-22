@@ -48,5 +48,24 @@ namespace Ananev_Artem_Kt_41_22.Controllers
             await _disciplineService.DeleteDisciplineAsync(disciplineId, cancellationToken);
             return Ok("Дисциплина успешно удалена.");
         }
+        [HttpGet("by-head-id")]
+        public async Task<IActionResult> GetDisciplinesByHeadIdAsync(
+    [FromQuery] int? headid,
+    CancellationToken cancellationToken)
+        {
+            if (headid == null)
+            {
+                return BadRequest("Поле headid не может быть пустым.");
+            }
+
+            var filter = new HeadIdDisciplineFilter
+            {
+                HeadIdName = headid
+            };
+
+            var disciplines = await _disciplineService.GetDisciplinesByHeadIdAsync(filter, cancellationToken);
+
+            return Ok(disciplines);
+        }
     }
 }

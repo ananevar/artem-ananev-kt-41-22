@@ -97,5 +97,25 @@ namespace Ananev_Artem_Kt_41_22.Interfaces.DisciplineInterfaces
 
             await _dbContext.SaveChangesAsync(cancellationToken);
         }
+        public async Task<Discipline[]> GetDisciplinesByHeadIdAsync(HeadIdDisciplineFilter filter, CancellationToken cancellationToken = default)
+        {
+            if (filter.HeadIdName == null)
+                return Array.Empty<Discipline>();
+
+            var disciplines = await (
+                from department in _dbContext.Departments
+                where department.HeadId == filter.HeadIdName
+                join teacher in _dbContext.Teachers on department.Id equals teacher.DepartmentId
+                join load in _dbContext.Loads on teacher.Id equals load.TeacherId
+                join discipline in _dbContext.Disciplines on load.DisciplineId equals discipline.Id
+                select discipline
+            ).Distinct()
+             .ToArrayAsync(cancellationToken);
+
+            return disciplines;
+        }
+
+
     }
+
 }
