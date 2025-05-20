@@ -1,5 +1,6 @@
 using Ananev_Artem_Kt_41_22.DB;
 using Microsoft.EntityFrameworkCore;
+using Ananev_Artem_Kt_41_22.Middlewares;
 using Ananev_Artem_Kt_41_22.Interfaces.TeachersInterfaces;
 using Ananev_Artem_Kt_41_22.ServiceExtensions;
 using Microsoft.Extensions.Logging;
@@ -43,6 +44,8 @@ try
     }
 
     app.UseAuthorization();
+
+    app.UseMiddleware<ExceptionHandlerMiddleware>();
 
     app.MapControllers();
 
